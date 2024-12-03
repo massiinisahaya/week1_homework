@@ -1,4 +1,6 @@
-numbers = input("データを入力してください(スペース区切り)")
+import math
+
+numbers = input("データを入力してください(スペース区切り) \033[31m > \033[0m")
 cleaned_numbers = numbers.replace(",", " ")
 print(cleaned_numbers)
 
@@ -29,6 +31,6 @@ total = 0
 for number in numbers_link:
     total += number
 
-average_number = round(total / len(numbers_link))
+average_number = math.floor(total / len(numbers_link))
 
 print(f"平均値: {average_number}")
