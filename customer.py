@@ -11,7 +11,7 @@ class Customer:
     def entry_fee(self):
         if self.age < 20:
             return 1000
-        elif 20 <= self.age < 65:
+        elif self.age < 65:
             return 1500
         else:
             return 1200
